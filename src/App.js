@@ -9,6 +9,15 @@ const App = () => {
 
   const apiKey = "3bea504462b949c285dad781d0c837e9";
 
+  const toggleDarkMode = () => {
+    const page = document.body;
+    const title = document.querySelector(".header-title");
+    const date = document.querySelector(".header-date");
+    page.classList.toggle("dark-mode");
+    title.classList.toggle("dark-mode");
+    date.classList.toggle("dark-mode");
+  };
+
   useEffect(() => {
     getTodaysDate();
     handleClickTopStories();
@@ -27,7 +36,7 @@ const App = () => {
       "September",
       "October",
       "November",
-      "December"
+      "December",
     ];
     const weekdays = [
       "Sunday",
@@ -36,7 +45,7 @@ const App = () => {
       "Wednesday",
       "Thursday",
       "Friday",
-      "Saturday"
+      "Saturday",
     ];
     const date = new Date();
     const year = date.getFullYear();
@@ -109,7 +118,7 @@ const App = () => {
     setResultsTitle("Science");
   };
 
-  const handleSearch = event => {
+  const handleSearch = (event) => {
     let searchBarInput = event.target.value;
 
     if (event.keyCode === 13) {
@@ -132,6 +141,9 @@ const App = () => {
             <h1 className="header-title">NEWS NOW</h1>
             <h6 className="header-date">{currentDate}</h6>
             <button className="header-subscribe">Subscribe</button>
+            {/* <button onClick={toggleDarkMode} className="header-toggle">
+              Toggle Night Mode
+            </button> */}
             <input
               id="searchbar"
               className="header-searchbar"
@@ -171,7 +183,7 @@ const App = () => {
             <h2 className="page-title">{resultsTitle}</h2>
           </div>
           <div className="info-body">
-            {articles.map(item => (
+            {articles.map((item) => (
               <div className="full-article">
                 <div className="article" key={item.publishedAt}>
                   <a

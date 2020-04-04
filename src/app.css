@@ -4,6 +4,11 @@
   color: #111;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 .page-title {
   position: relative;
   bottom: 190px;
@@ -138,6 +143,18 @@ p {
   border: none;
 }
 
+.header-toggle {
+  position: relative;
+  bottom: 175px;
+  left: 10%;
+  padding: 10px;
+  border-radius: 20px;
+  width: 10%;
+  color: white;
+  background-color: #1a85fb;
+  border: none;
+}
+
 .header-subscribe:hover {
   cursor: pointer;
   background-color: #4db8ff;
@@ -194,5 +211,39 @@ p {
   .item-title-anchor {
     position: relative;
     bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .header-subscribe {
+    position: relative;
+    width: 12%;
+    text-align: center;
+    font-size: 8px;
+  }
+
+  .full-article {
+    margin-left: 5%;
+    height: 600px;
+    margin-bottom: 5%;
+  }
+  .article-image {
+    position: relative;
+    bottom: 160px;
+  }
+
+  .article {
+    position: relative;
+    top: 0px;
+  }
+
+  .item-title-anchor {
+    position: relative;
+    bottom: 25px;
+  }
+
+  p {
+    position: relative;
+    bottom: 35px;
   }
 }
