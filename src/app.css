@@ -254,4 +254,8 @@ p {
     position: relative;
     bottom: 40px;
   }
+
+  .header-title {
+    top: 10px;
+  }
 }
