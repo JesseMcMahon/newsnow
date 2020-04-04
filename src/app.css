@@ -218,10 +218,15 @@ p {
 
 @media only screen and (max-width: 730px) {
   .header-subscribe {
+    margin-top: 1px;
     position: relative;
     width: 12%;
     text-align: center;
     font-size: 8px;
+  }
+
+  .header-searchbar {
+    margin-top: 1px;
   }
 
   .full-article {
