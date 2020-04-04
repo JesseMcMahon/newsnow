@@ -223,6 +223,7 @@ p {
   }
 
   .full-article {
+    font-size: 90%;
     margin-left: 5%;
     height: 600px;
     margin-bottom: 5%;
@@ -239,11 +240,11 @@ p {
 
   .item-title-anchor {
     position: relative;
-    bottom: 25px;
+    bottom: 35px;
   }
 
   p {
     position: relative;
-    bottom: 35px;
+    bottom: 40px;
   }
 }
